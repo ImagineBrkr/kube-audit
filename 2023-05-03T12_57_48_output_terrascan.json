@@ -1,0 +1,459 @@
+﻿{
+  "results": {
+    "scan_errors": [
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\app",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project\\app' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project\\argo' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\myapp",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project\\argo\\myapp' has no terraform config files"
+      },
+      {
+        "iac_type": "terraform",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform",
+        "errMsg": "directory 'D:\\proyectos\\gcp\\argo-project\\terraform' has no terraform config files"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\app\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\app\\.github\\workflows\\principal.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\app\\.github\\workflows\\principal.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\app",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\app\\requirements.txt', err: error while unmarshalling yaml, error yaml: unmarshal errors:\n  line 1: cannot unmarshal !!str `tornado...` into map[interface {}]interface {}"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\argo\\.github\\workflows\\clean_branch.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\argo\\.github\\workflows\\clean_branch.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications\\sealed-secrets.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications\\sealed-secrets.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications\\test-argo-repo.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\argo\\argo_applications\\test-argo-repo.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\myapp",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\argo\\myapp\\app_deploy.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\argo\\myapp\\app_deploy.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\argo\\myapp",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\argo\\myapp\\app_service.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\argo\\myapp\\app_service.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\key.json', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\key.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\output.json', err: error while resolving intrinsic functions, error invalid JSON: invalid character '├┐' looking for beginning of value"
+      },
+      {
+        "iac_type": "arm",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\output.json'. err: unable to parse file D:\\proyectos\\gcp\\argo-project\\output.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\modules.json', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\modules.json"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\lock.yml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\lock.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\pr-title.yml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\pr-title.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\pre-commit.yml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\pre-commit.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\release.yml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\release.yml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\stale-actions.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.github\\workflows\\stale-actions.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.pre-commit-config.yaml', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.pre-commit-config.yaml"
+      },
+      {
+        "iac_type": "cft",
+        "directory": "D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc",
+        "errMsg": "error while loading iac file 'D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.releaserc.json', err: failed to find valid Resources key in file: D:\\proyectos\\gcp\\argo-project\\terraform\\argo_in_aws\\.terraform\\modules\\vpc\\.releaserc.json"
+      },
+      {
+        "iac_type": "kustomize",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "kustomization.y(a)ml file not found in the directory D:\\proyectos\\gcp\\argo-project"
+      },
+      {
+        "iac_type": "helm",
+        "directory": "D:\\proyectos\\gcp\\argo-project",
+        "errMsg": "no helm charts found in directory D:\\proyectos\\gcp\\argo-project"
+      }
+    ],
+    "violations": [
+      {
+        "rule_name": "gkeControlPlaneNotPublic",
+        "description": "Ensure GKE Control Plane is not public.",
+        "rule_id": "AC_GCP_0023",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "primary",
+        "resource_type": "google_container_cluster",
+        "module_name": "root",
+        "file": "terraform\\cluster\\main.tf",
+        "plan_root": "terraform\\cluster",
+        "line": 13
+      },
+      {
+        "rule_name": "pipUnpinnedVersion",
+        "description": "Ensure Pinned Pip Package Version",
+        "rule_id": "AC_DOCKER_0010",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "Dockerfile",
+        "resource_type": "docker_run",
+        "file": "app\\Dockerfile",
+        "line": 6
+      },
+      {
+        "rule_name": "pipInstallKeepingCachedPackages",
+        "description": "Ensure when installing packages with pip, the '--no-cache-dir' flag should be set to make Docker images smaller",
+        "rule_id": "AC_DOCKER_0031",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "Dockerfile",
+        "resource_type": "docker_run",
+        "file": "app\\Dockerfile",
+        "line": 6
+      },
+      {
+        "rule_name": "securityContextUsed",
+        "description": "Apply Security Context to Your Pods and Containers",
+        "rule_id": "AC_K8S_0064",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "privilegeEscalationCheck",
+        "description": "Containers Should Not Run with AllowPrivilegeEscalation",
+        "rule_id": "AC_K8S_0085",
+        "severity": "HIGH",
+        "category": "Compliance Validation",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "appArmorProfile",
+        "description": "AppArmor profile not set to default or custom profile will make the container vulnerable to kernel level threats",
+        "rule_id": "AC_K8S_0073",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "secCompProfile",
+        "description": "Default seccomp profile not enabled will make the container to make non-essential system calls",
+        "rule_id": "AC_K8S_0080",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "noReadinessProbe",
+        "description": "No readiness probe will affect automatic recovery in case of unexpected errors",
+        "rule_id": "AC_K8S_0072",
+        "severity": "LOW",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "nolivenessProbe",
+        "description": "No liveness probe will ensure there is no recovery in case of unexpected errors",
+        "rule_id": "AC_K8S_0070",
+        "severity": "LOW",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "MemoryRequestsCheck",
+        "description": "Memory Request Not Set in config file.",
+        "rule_id": "AC_K8S_0099",
+        "severity": "MEDIUM",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "CpuRequestsCheck",
+        "description": "CPU Request Not Set in config file.",
+        "rule_id": "AC_K8S_0097",
+        "severity": "MEDIUM",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "runAsNonRootCheck",
+        "description": "Minimize Admission of Root Containers",
+        "rule_id": "AC_K8S_0087",
+        "severity": "HIGH",
+        "category": "Identity and Access Management",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "MemorylimitsCheck",
+        "description": "Memory Limits Not Set in config file.",
+        "rule_id": "AC_K8S_0100",
+        "severity": "MEDIUM",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "CpulimitsCheck",
+        "description": "CPU Limits Not Set in config file.",
+        "rule_id": "AC_K8S_0098",
+        "severity": "MEDIUM",
+        "category": "Security Best Practices",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "readOnlyFileSystem",
+        "description": "Container images with readOnlyRootFileSystem set as false mounts the container root file system with write permissions",
+        "rule_id": "AC_K8S_0078",
+        "severity": "MEDIUM",
+        "category": "Identity and Access Management",
+        "resource_name": "myapp",
+        "resource_type": "kubernetes_deployment",
+        "file": "argo\\myapp\\app_deploy.yaml",
+        "line": 1
+      },
+      {
+        "rule_name": "networkPort80ExposedToprivate",
+        "description": "Ensure Security Groups Unrestricted Specific Ports http (TCP,80) is not exposed to private hosts more than 32",
+        "rule_id": "AC_AWS_0321",
+        "severity": "LOW",
+        "category": "Infrastructure Security",
+        "resource_name": "http_default",
+        "resource_type": "aws_security_group_rule",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 41
+      },
+      {
+        "rule_name": "networkPort80ExposedToprivate",
+        "description": "Ensure Security Groups Unrestricted Specific Ports http (TCP,80) is not exposed to private hosts more than 32",
+        "rule_id": "AC_AWS_0321",
+        "severity": "LOW",
+        "category": "Infrastructure Security",
+        "resource_name": "http_custom",
+        "resource_type": "aws_security_group_rule",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 97
+      },
+      {
+        "rule_name": "detailedMonitoringEnabledInstance",
+        "description": "Ensure that detailed monitoring is enabled for EC2 instances.",
+        "rule_id": "AC_AWS_0480",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "web_custom",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 122
+      },
+      {
+        "rule_name": "detailedMonitoringEnabledInstance",
+        "description": "Ensure that detailed monitoring is enabled for EC2 instances.",
+        "rule_id": "AC_AWS_0480",
+        "severity": "HIGH",
+        "category": "Logging and Monitoring",
+        "resource_name": "web_default",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 59
+      },
+      {
+        "rule_name": "port22OpenToInternet",
+        "description": "Security Groups - Unrestricted Specific Ports - (SSH,22)",
+        "rule_id": "AC_AWS_0227",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "ssh",
+        "resource_type": "aws_security_group_rule",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 33
+      },
+      {
+        "rule_name": "port22OpenToInternet",
+        "description": "Security Groups - Unrestricted Specific Ports - (SSH,22)",
+        "rule_id": "AC_AWS_0227",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "ssh_custom",
+        "resource_type": "aws_security_group_rule",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 89
+      },
+      {
+        "rule_name": "instanceWithNoVpc",
+        "description": "Ensure that your AWS application is not deployed within the default Virtual Private Cloud in order to follow security best practices",
+        "rule_id": "AC_AWS_0153",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "web_default",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 59
+      },
+      {
+        "rule_name": "ec2UsingIMDSv1",
+        "description": "EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain",
+        "rule_id": "AC_AWS_0479",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "web_custom",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 122
+      },
+      {
+        "rule_name": "ec2UsingIMDSv1",
+        "description": "EC2 instances should disable IMDS or require IMDSv2 as this can be related to the weaponization phase of kill chain",
+        "rule_id": "AC_AWS_0479",
+        "severity": "MEDIUM",
+        "category": "Infrastructure Security",
+        "resource_name": "web_default",
+        "resource_type": "aws_instance",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 59
+      },
+      {
+        "rule_name": "vpcFlowLogsNotEnabled",
+        "description": "Ensure VPC flow logging is enabled in all VPCs",
+        "rule_id": "AC_AWS_0369",
+        "severity": "LOW",
+        "category": "Logging and Monitoring",
+        "resource_name": "this",
+        "resource_type": "aws_vpc",
+        "module_name": "vpc",
+        "file": "git::https://github.com/terraform-aws-modules/terraform-aws-vpc?ref=v3.19.0\\main.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 20
+      },
+      {
+        "rule_name": "port9000AlbNetworkPortSecurity",
+        "description": "Security Groups - Unrestricted Specific Ports - Hadoop Name Node (TCP,9000)",
+        "rule_id": "AC_AWS_0240",
+        "severity": "HIGH",
+        "category": "Infrastructure Security",
+        "resource_name": "sonar_qube_custom",
+        "resource_type": "aws_security_group_rule",
+        "module_name": "root",
+        "file": "terraform\\argo_in_aws\\resources.tf",
+        "plan_root": "terraform\\argo_in_aws",
+        "line": 105
+      }
+    ],
+    "skipped_violations": null,
+    "scan_summary": {
+      "file/folder": "D:\\proyectos\\gcp\\argo-project",
+      "iac_type": "docker,k8s,terraform",
+      "scanned_at": "2023-05-03 18:28:48.2843873 +0000 UTC",
+      "policies_validated": 224,
+      "violated_policies": 26,
+      "low": 5,
+      "medium": 13,
+      "high": 8
+    }
+  }
+}

@@ -1,0 +1,7 @@
+.row {
+    display: flex;
+  }
+  
+  .six.columns {
+    width: 50%;
+  }
