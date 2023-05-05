@@ -7,13 +7,118 @@ from dash import html
 from dash.dependencies import Input, Output
 import plotly.express as px
 from dash import dash_table
+import plotly.colors
 
 file_kube_audit = "2023-05-03T12_57_48_output_kube_audit.json"
 file_kube_linter = "2023-05-03T12_57_48_output_kube_linter.json"
 file_terrascan = "2023-05-03T12_57_48_output_terrascan.json"
 file_trivy = "2023-05-03T12_57_48_output_trivy.json"
 
+def empty_styled_data_table(id):
+    table = dash_table.DataTable(
+        id = id,
+        # Estilos de la tabla
+        columns=[],
+        data=[],
+        style_data={
+            'whiteSpace': 'normal',
+            'height': 'auto',
+        },
+        style_table={
+            'overflowX': 'auto'
+        },
+        style_cell={
+            'textAlign': 'left',
+            'font_family': 'Arial',
+            'font_size': '14px',
+            'padding': '5px',
+        },
+        style_header={
+            'backgroundColor': '#f9f9f9',
+            'fontWeight': 'bold',
+            'border': '1px solid #e5e5e5',
+            'whiteSpace': 'normal',
+        },
+        style_data_conditional=[
+            {
+                'if': {'row_index': 'odd'},
+                'backgroundColor': 'white',
+            },
+            {
+                'if': {'row_index': 'even'},
+                'backgroundColor': '#f2f2f2',
+            },
+        ],
+        style_cell_conditional=[
+            {
+                'if': {'column_id': c},
+                'textAlign': 'left'
+            } for c in ['Column1', 'Column2', 'Column3']
+        ],
+        sort_action="native",
+        sort_mode="multi",
+        filter_action="native",
+        page_action="native",
+        page_current=0,
+        page_size=10,
+    )
 
+    return table
+
+def add_style_graph(fig, title, x_label, y_label = "Total"):
+    # Estilizar el gráfico
+    fig.update_layout(
+        title={
+            'text': title,
+            'y': 0.9,
+            'x': 0.5,
+            'xanchor': 'center',
+            'yanchor': 'top',
+            'font': {
+                'size': 24,
+                'family': 'Arial, sans-serif',
+                'color': 'black'
+            }
+        },
+        xaxis_title={
+            'text': x_label,
+            'font': {
+                'size': 18,
+                'family': 'Arial, sans-serif',
+                'color': 'black'
+            }
+        },
+        yaxis_title={
+            'text': "Total",
+            'font': {
+                'size': 18,
+                'family': 'Arial, sans-serif',
+                'color': 'black'
+            }
+        },
+        plot_bgcolor='rgba(0, 0, 0, 0)',  # Fondo transparente
+        paper_bgcolor='rgba(0, 0, 0, 0)',  # Fondo transparente
+    )
+    # Usa una paleta de colores cualitativa de Plotly
+    palette = plotly.colors.qualitative.Plotly
+    # Estilizar las barras
+    fig.update_traces(
+        marker=dict(color=palette * 5, line= {'color': 'black', 'width':1.5})  # Repite la paleta si es necesario
+
+        # {
+        #     'color': 'blue',  # Color de las barras
+        #     'line': {
+        #         'color': 'black',  # Color del borde de las barras
+        #         'width': 1.5  # Grosor del borde de las barras
+        #     }
+        # },
+    )
+
+    return fig
+
+def add_style_table(table):
+    table =dash_table.DataTable()    
+    
 # INITIAL LAYOUT
 
 app = dash.Dash(__name__)
@@ -51,19 +156,7 @@ app.layout = html.Div(
                 ],
                 value="Checks",
             ),
-                dash_table.DataTable(
-                id="details_table_kube_linter",
-                columns=[],
-                data=[],
-                page_size=10,
-                style_table={"overflowX": "auto"},
-                style_header={'whiteSpace': 'normal'},
-                style_data={
-                    'whiteSpace': 'normal',
-                    'height': 'auto',
-                },
-                style_cell={'textAlign': 'left'},
-            ),
+                empty_styled_data_table('details_table_kube_linter'),
             ], className="six columns",),
          html.Div(
             [html.H3("Resultados de Terrascan"),
@@ -78,19 +171,7 @@ app.layout = html.Div(
          ], className="row",),
      html.Div([
          html.Div(html.H2("Detalles"), className="row"),
-         dash_table.DataTable(
-             id="details_table",
-             columns=[],
-             data=[],
-             page_size=10,
-             style_table={"overflowX": "auto"},
-             style_header={'whiteSpace': 'normal'},
-             style_data={
-                'whiteSpace': 'normal',
-                'height': 'auto',
-             },
-             style_cell={'textAlign': 'left'},
-         ),]),
+         empty_styled_data_table('details_table'),]),
      ]
 )
 
@@ -181,11 +262,7 @@ def show_trivy():
         grouped_df = df.groupby(group_by).size().reset_index(name="Count")
         fig = px.bar(grouped_df, x=group_by, y="Count",
                      hover_data=[group_by, "Count"])
-        fig.update_layout(
-            title=f"Número de ocurrencias por {label}",
-            xaxis_title=label,
-            yaxis_title="Total",
-        )
+        fig = add_style_graph(fig, f"Número de ocurrencias por {label}", label)
 
         return fig
 
@@ -261,7 +338,7 @@ def show_kube_audit():
             xaxis_title=label,
             yaxis_title="Total",
         )
-
+        fig = add_style_graph(fig, f"Número de ocurrencias por {label}", label)
         return fig
 
     @app.callback(
@@ -318,7 +395,7 @@ def show_terrascan():
             xaxis_title=label,
             yaxis_title="Count",
         )
-
+        fig = add_style_graph(fig, f"Número de ocurrencias por {label}", label)
         return fig
 
     @app.callback(
