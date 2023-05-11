@@ -123,7 +123,7 @@ def add_style_table(table):
 
 app = dash.Dash(__name__)
 app.layout = html.Div(
-    [html.H1("Auditoría de Kubernetes"),
+    [html.H1("Auditoría de Microservicios"),
      html.Div(
         [html.Div(
             [html.H3("Resultados de Trivy"),
